@@ -1,0 +1,14 @@
+{
+  "name": "iex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "script": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "moment": "^2.18.1",
+    "socket.io": "^2.0.3"
+  }
+}
