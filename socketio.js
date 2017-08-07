@@ -1,6 +1,5 @@
 const moment = require('moment');
 const blessed = require('blessed');
-const socket = require('socket.io-client')(url)
 
 const screen = blessed.screen({
   smartCSR: true,
@@ -72,6 +71,7 @@ screen.append(sellBox);
 
 
 const url = 'https://ws-api.iextrading.com/1.0/deep'
+const socket = require('socket.io-client')(url)
 
 const argSymbol = (process.argv[2] || 'snap').toUpperCase();
 socket.on('message', message => updatePrice(JSON.parse(message)));
